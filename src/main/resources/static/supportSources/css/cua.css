@@ -1,0 +1,46 @@
+
+.colNum{
+	width: 5%;
+	text-align: center;
+}
+
+.numData{
+	color: #929292;
+}
+
+.colName{
+	width: 30%;
+}
+
+.nameData{
+	color: #005292;
+}
+
+.colId{
+	width: 15%;
+}
+
+.colNick{
+	width: 15%;
+}
+
+.colRol{
+	width: 15%;
+}
+
+.colOpt{
+	width: 10%;
+}
+.editOpt, .deleteOpt{
+	cursor: pointer;
+}
+
+.editOpt:hover{
+	color: #02e602;
+	text-decoration: underline;
+}
+
+.deleteOpt:hover{
+	color: #e60202;
+	text-decoration: underline;
+}

@@ -1,0 +1,91 @@
+#paneRegistry{
+	font-family: arial;
+	width: 50%;
+	height: 100%;
+	position:absolute;
+	left: 20%;
+	top: 0%;
+	padding-top: 5vh;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-color: #ffffff54;
+}
+
+#paneRegistry > h1 {
+	width: 100%;
+	text-align:center;
+	font-size: 1.5vw;
+	color: #404040;	
+	margin-bottom: 5vh;	
+}
+
+#paneRegistry > div {
+	margin-top: 2vh;
+	width: 96%;
+	display: flex;
+}
+
+#paneRegistry > form > * {
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+}
+
+#paneRegistry > form > p {
+	font-size: 1vw;
+}
+
+#paneRegistry > form > input {
+	width: 96%;
+	font-size: 1vw;
+	padding: 0.5vw;
+	background-color: rgba(0,0,0,0.0);
+	border-style: none none solid none;
+	border-width: 1px;
+	border-color: gray;
+	
+}
+
+#toggleVisibility {
+	width: 5%;
+	right: 13%;
+	position: absolute;
+	z-index: 1;
+	cursor: pointer;
+}
+
+#paneRegistry > div > h2 {
+	width: 45%;
+	margin-left: 2.5%;
+	padding: 1%;
+	background-color: #005376;
+	font-size: 1vw;
+	color: white;
+	cursor: pointer;
+	text-align: center;
+}
+
+
+#paneRegistry > div > h2:hover {
+	background-color: #0080B7;
+}
+
+select{
+	width: 50%;
+	font-family: arial;
+	font-size: 1vw;
+	background-color: #ffffff54;
+	border: none;
+	text-align: center;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	padding-left: 1vw;
+	padding-right: 1vw;
+}
+
+#mesagge{
+	width: 100%;
+	text-align: center;
+	font-family: arial;
+	font-size: 0.9vw;
+	margin-top: 1vh;
+}

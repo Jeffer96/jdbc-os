@@ -1,0 +1,56 @@
+<section class="Header">
+	<div class="UserInfo">
+		<img id="userPic" src="supportSources/images/unauthenticated.jpg"/>
+		<div>
+			<h1 id="userName">Unauthenticated</h1>
+			<p id="userRole">role undefined</p>
+		</div>
+	</div>
+	<div class="NotificationArea">
+		<section>
+			<p class="spanAlert" id = "messagesSpan">7</p>
+			<img src="supportSources/images/messages.png" onclick="dropDown('messages')"/>
+			<div class="dropDown" id="messagesDropDown">
+				<div >
+					<ul id="messageList">							
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section>
+			<p class="spanAlert" id = "notifySpan">10</p>
+			<img src="supportSources/images/notifications.png" onclick="dropDown('notify')"/>
+			<div class="dropDown" id="notifyDropDown">
+				<div>
+					<ul id="notificationList">							
+					</ul>
+				</div>
+			</div>
+		</section>
+	</div>
+</section>
+<div class="dashBoard" onload="ready()">
+	<section class="sideBar">
+		<ul>
+			<li id="cu">
+				Control de usuarios
+			</li>
+			<li id="pl">
+				Clientes
+			</li>
+			<li id="tr">
+				tareas
+			</li>
+			<li id="ca">
+				Control de actividades
+			</li>
+			<li id="ga">
+				Gestor de archivos
+			</li>
+		</ul>
+		<h1 id="logOut">salir</h1>
+	</section>
+	<section id="MainDashBoard">
+	</section>
+</div>
+<script src="script/admin_modules/administrator.js"></script>
