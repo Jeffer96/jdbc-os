@@ -46,7 +46,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 					//System.out.println(" 7. finaliza bien hp vida");
 				}
 			}catch (Exception e) {
-				System.out.println("Error from jwt filter: "+e);
+				System.out.println("=============JWTFILTER=============\n		Error from jwt filter: "+e);
 			}
 			
 			fc.doFilter(request, response);

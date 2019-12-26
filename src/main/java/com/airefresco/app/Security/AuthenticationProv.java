@@ -30,6 +30,7 @@ public class AuthenticationProv implements AuthenticationProvider {
 	    }
 	    //if (!encoder.matches(pass, user.getPassword())) {
 	    if (!pass.equals(user.getPassword())) {
+	    	System.out.println("contraseña incorrecta: "+pass+"->"+user.getPassword());
 	        throw new BadCredentialsException("User: "+nick+" couldn´t be authenticated, try again");
 	    }
 		return new UsernamePasswordAuthenticationToken(user,authentication.getCredentials(),user.getAuthorities());

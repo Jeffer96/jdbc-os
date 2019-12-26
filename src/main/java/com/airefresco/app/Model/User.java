@@ -2,35 +2,15 @@
 package com.airefresco.app.Model;
 
 import java.util.Date;
+//import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.validation.constraints.NotBlank;
-
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-
-import lombok.Data;
-import lombok.ToString;
-
-
-@Entity
-@Table(name="Usuario")
-@ToString(exclude = "pass")
-@Data
 public class User {
 	
-	@Id
 	private int cedula;
-	@NotBlank
 	private String nombres;
-	@NotBlank
 	private String apellidos;
-	@NotBlank
 	private String nick;
-	@NotBlank 
 	private String pass;
-	@NotBlank
 	private String roleName;
 	private String email;
 	private boolean activo;
@@ -62,8 +42,8 @@ public class User {
 	
 	
 	protected String secure(String param) {
-		//return param;
-		return new BCryptPasswordEncoder().encode(param);
+		return param;
+		//return new BCryptPasswordEncoder().encode(param);
 	}
 	
 	public User(String nickName, String userPass) {

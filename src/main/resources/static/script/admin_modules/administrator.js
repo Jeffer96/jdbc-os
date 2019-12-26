@@ -46,9 +46,13 @@ $(document).ready(function(){
 				headers : {'Authorization' : tp + localStorage.getItem(ap)}
 			}).done(function(ans){
 				$("#MainDashBoard").html(ans);
+				hideLoading();
 				//poblateTable(listCustomers, getRowCustomer, collectionCustomers, "clientesTable");
 				
 			})
+		}).catch(function(error){
+			hideLoading();
+			alert("error: "+error);
 		})
 	});
 	$("#tr").click(function(){

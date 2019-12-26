@@ -24,7 +24,7 @@ public class CustomUserDetailsService implements UserDetailsService {
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		User user = userRepository.findUserByNickName( username );
 		if (user == null) {
-			throw  new UsernameNotFoundException(">>>>>>>>>>>>>>>>>>>>>>>>User not found : " + username);
+			throw  new UsernameNotFoundException(" User not found : " + username+ "at custom user details service finding by nick");
 		}
 		
         return UserPrincipal.create(user);
@@ -33,7 +33,7 @@ public class CustomUserDetailsService implements UserDetailsService {
     public UserDetails loadUserById(int id) {
 		 User user = userRepository.findUserById(id);
 		 if (user == null) {
-				throw  new UsernameNotFoundException(">>>>>>>>>>>>>>>>>>>>>>>>User not found : " + id);
+				throw  new UsernameNotFoundException(" User not found : " + id+ "at custom user details service finding by id");
 			}
         return UserPrincipal.create(user);
     }

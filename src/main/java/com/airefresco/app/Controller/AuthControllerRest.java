@@ -87,8 +87,11 @@ public class AuthControllerRest {
 			if (StringUtils.hasText(ans) && TokenProvider.validateToken(ans)) {
 				int userId = TokenProvider.getUserId(ans);
 				try {
+					System.out.println("*********************** el id esta activo: "+userId);
 					resp = userRepository.findUserById(userId).getRoleName().equals(role);
-				}catch (DataAccessException ex) {}
+				}catch (Exception ex) {
+					
+				}
 			}
 		}
 		return resp;

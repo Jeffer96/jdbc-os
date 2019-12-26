@@ -33,7 +33,7 @@ public class webSecurityConfig extends WebSecurityConfigurerAdapter{
 	
 	@Autowired
 	CustomEntryPoint unauthorizedHandler;
-			
+				
 	@Bean
 	public BCryptPasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
